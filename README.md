@@ -45,12 +45,12 @@ There are three main parts to Task Magic:
         *   `.ai/memory/PLANS_LOG.md`: A log for archived plans.
     *   **AI interaction**: The AI can consult the memory to understand how similar things were done in the past, or why a certain approach was taken.
 
-## Working with AI agents (Cursor & Windsurf)
+## Working with AI agents (VSCode, Cursor & Windsurf)
 
 Task Magic is designed to work closely with AI agents. Here's how rules and context are handled:
 
 *   **Automatic context (`_index.md` files)**:
-    *   Files named `_index.md` (like the one in `.windsurf/rules/.task-magic/_index.md` or `.cursor/rules/.task-magic/_index.mdc`) provide a high-level overview of a system or a set of rules.
+    *   Files named `_index.md` (like the one in `.windsurf/rules/.task-magic/_index.md`, `.cursor/rules/.task-magic/_index.mdc`, or `.vscode/rules/.task-magic/_index.mdc`) provide a high-level overview of a system or a set of rules.
     *   These `_index.md` files are **automatically included in the AI's context** when you're working within a project that uses them. This gives the AI a foundational understanding without you needing to do anything extra.
 
 *   **On-demand rules (other `.md` or `.mdc` rule files)**:
@@ -63,6 +63,7 @@ Task Magic is designed to work closely with AI agents. Here's how rules and cont
     *   **For best results, @-tag specific rule files or directories in your prompts.** For example:
         *   `@.cursor/rules/.task-magic/tasks.mdc create tasks for this feature`
         *   `@.windsurf/rules/.task-magic/plans.md generate a plan for X`
+        *   `@.vscode/rules/.task-magic/tasks.mdc create tasks for this feature`
         *   `@TASKS.md what is the status of my project?` (to refer to the main task checklist)
         *   `@.ai/plans/features/my-cool-feature-plan.md can you review this plan?`
     *   This helps ensure the AI looks at the exact information you want it to.
