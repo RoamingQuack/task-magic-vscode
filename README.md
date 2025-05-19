@@ -100,3 +100,13 @@ This system is designed to evolve. If you have ideas for improvements, find a bu
 
 *   **Open an issue**: If you encounter problems or have suggestions, please open an issue.
 *   **Submit Pull Requests**: If you've made enhancements to the rules or the system structure that you think would benefit others, feel free to submit a pull request.
+
+## Visual Studio Code Support
+
+Task Magic now includes support for Visual Studio Code, enabling seamless integration with your development workflow. This includes:
+
+- Enhanced task management directly within VS Code.
+- Compatibility with AI agents like Cursor and Windsurf.
+- Access to `.ai/` memory and plans for better context.
+
+To get started, ensure you have the necessary extensions installed and follow the setup instructions provided in the repository.
